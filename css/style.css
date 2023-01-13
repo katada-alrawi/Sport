@@ -1,0 +1,106 @@
+/* 0.global style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+  
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 1px;
+  }
+  
+  html {
+    box-sizing: border-box;
+    background-color: rgb(246, 246, 239);
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  header {
+    background-color: black;
+  }
+  
+  h1 {
+    padding: 20px;
+    font-size: 25px;
+  }
+  
+  /*1. ul class.flex  */
+  
+  .hide-when-mobile {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5vw;
+  } 
+  
+  .flex {
+    display: flex;
+  }
+  
+  .main-list {
+    padding: 20px;
+    font-size: 19px;
+    position: relative;
+  }
+  
+  .main-link {
+    padding: 8px 15px;
+  }
+  
+  .main-link:hover {
+    color: red;
+    box-shadow: 0 0 5px red;
+    border-radius: 5px;
+  }
+  
+  /* 1.1 sub-ul  */
+  
+  .sub-ul {
+    display: none;
+    position: absolute;
+    top: 100x;
+    left: 151px;
+    border-top: 3px soild rgb(2, 2, 2);
+    background-color: rgb(24, 22, 22);
+    border-radius: 8px;
+    padding: 5px;
+    width: 120px;
+  }
+  .sub-ul li {
+    padding: 8px 10px;
+    font-size: 17px;
+    border-bottom: 2px solid rgb(39, 32, 32);
+  }
+  .sub-ul li a:hover {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .main-list:hover .sub-ul,
+  .sub-ull {
+    display: block;
+  }
+  
+  /* sub of sub project */
+  
+  .sub-sub-ul {
+    top: 65px;
+    left: 5px;
+    border-top: 3px soild rgb(2, 2, 2);
+    background-color: rgb(24, 22, 22);
+    border-radius: 8px;
+    padding: 5px;
+    width: 120px;
+  }
+  
+  /* 2. header of mobile  */
+  .show-when-mobile {
+    display: none;
+  }
+  
